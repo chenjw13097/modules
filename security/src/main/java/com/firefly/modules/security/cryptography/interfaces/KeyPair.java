@@ -1,4 +1,4 @@
-package com.firefly.modules.security.crypto.interfaces;
+package com.firefly.modules.security.cryptography.interfaces;
 
 /**
  * @author Jiawei Chan
