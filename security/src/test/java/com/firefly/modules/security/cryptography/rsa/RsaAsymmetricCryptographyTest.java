@@ -36,7 +36,7 @@ public class RsaAsymmetricCryptographyTest {
     }
 
     @Test
-    public void encryptWithPublicKey() throws CryptographyException {
+    public void testEncryptWithPublicKey() throws CryptographyException {
         byte[] plainTextSend = "123!&kjWdfYYL?".getBytes(StandardCharsets.UTF_8);
 
 
@@ -47,7 +47,7 @@ public class RsaAsymmetricCryptographyTest {
     }
 
     @Test
-    public void encryptWithPrivateKey() throws CryptographyException {
+    public void testEncryptWithPrivateKey() throws CryptographyException {
         byte[] plainTextSend = "3!&jWdfYYL?".getBytes(StandardCharsets.UTF_8);
 
         byte[] cipherText = asymmetricCryptography.encryptWithPrivateKey(plainTextSend, privateKey);
@@ -57,7 +57,7 @@ public class RsaAsymmetricCryptographyTest {
     }
 
     @Test
-    public void signAndVerify() throws CryptographyException {
+    public void testSignAndVerify() throws CryptographyException {
         byte[] message = "fj123!&kWfY".getBytes(StandardCharsets.UTF_8);
 
         byte[] messageDigest = asymmetricCryptography.sign(message, privateKey);
